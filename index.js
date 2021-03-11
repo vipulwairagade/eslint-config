@@ -198,7 +198,7 @@ module.exports = {
         "key-spacing": ["error", { beforeColon: false, afterColon: true, mode: "strict" }],
         "keyword-spacing": ["error", { before: true, after: true }],
         "line-comment-position": "off",
-        "linebreak-style": ["error", "unix", "windows"],
+        "linebreak-style": ["error", "windows"],
         "lines-around-comment": "off",
         "lines-between-class-members": "off",
         "max-depth": "off",
