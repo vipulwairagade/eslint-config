@@ -2,7 +2,9 @@
 
 module.exports = {
     env: {
-        es2021: true
+        es2021: true,
+        node: true,
+        commonjs: true
     },
     rules: {
         // Possible errors
@@ -196,7 +198,7 @@ module.exports = {
         "key-spacing": ["error", { beforeColon: false, afterColon: true, mode: "strict" }],
         "keyword-spacing": ["error", { before: true, after: true }],
         "line-comment-position": "off",
-        "linebreak-style": ["error", "unix"],
+        "linebreak-style": ["error", "unix", "windows"],
         "lines-around-comment": "off",
         "lines-between-class-members": "off",
         "max-depth": "off",
@@ -312,5 +314,9 @@ module.exports = {
         "symbol-description": "error",
         "template-curly-spacing": ["error", "never"],
         "yield-star-spacing": ["error", "after"]
-    }
+    },
+    parserOptions: {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
 };
