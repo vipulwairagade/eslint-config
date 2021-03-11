@@ -1,0 +1,24 @@
+name: Test ESLint config package
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Test Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Create Node Environment
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Install Packages & Test Application
+        run: |
+          npm ci
+          npm test
