@@ -5,14 +5,14 @@ This is base eslint configuration which can be used across projects without need
 
 ## How to Use ?
  ### Install 
- `npm install`
+ `npm i eslint-config-vipul-base`
 
-Then in ESLint config object i.e `.eslintrc` , use `extends : ""` as given below
+Then in ESLint config object i.e `.eslintrc` ,  use `extends : "eslint-config-vipul-base"` as given below
 
 ```
 {
   "root": true,
-  "extends": "",
+  "extends": "eslint-config-vipul-base",
   "env": {
     "node": true
   },
