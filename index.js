@@ -137,6 +137,7 @@ module.exports = {
 		"no-void": "error",
 		"no-warning-comments": "off",
 		"no-with": "error",
+		"prefer-object-has-own": "error",
 		"prefer-named-capture-group": "off",
 		"prefer-promise-reject-errors": "error",
 		"prefer-regex-literals": ["error", { disallowRedundantWrapping: true }],
