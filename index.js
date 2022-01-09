@@ -161,6 +161,7 @@ module.exports = {
 		"no-undef-init": "error",
 		"no-undefined": "off",
 		"no-unused-vars": ["error", { ignoreRestSiblings: true }],
+		"no-unused-private-class-members": "error",
 		"no-use-before-define": ["error", { functions: false }],
 
 		// Stylistic Issues
