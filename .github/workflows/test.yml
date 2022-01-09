@@ -1,4 +1,4 @@
-name: Test ESLint config package
+name: CI
 on:
   push:
     branches:

@@ -20,12 +20,11 @@
     "url": "https://github.com/vipulwairagade/eslint-config/issues"
   },
   "homepage": "https://github.com/vipulwairagade/eslint-config#readme",
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.21.0",
-    "eslint-find-rules": "^3.6.1"
+    "eslint": "^8.6.0",
+    "eslint-find-rules": "^4.1.0"
   },
   "peerDependencies": {
-    "eslint": "^7.21.0"
+    "eslint": "^8.6.0"
   }
 }
