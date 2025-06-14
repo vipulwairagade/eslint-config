@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/vipulwairagade/eslint-config#readme",
   "devDependencies": {
-    "eslint": "^8.6.0",
-    "eslint-find-rules": "^4.1.0"
+    "eslint": "^9.28.0",
+    "eslint-find-rules": "^5.0.0"
   },
   "peerDependencies": {
     "eslint": "^8.6.0"
