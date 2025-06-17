@@ -8,25 +8,29 @@
 ## What's this ?
 This is base eslint configuration which can be used across projects without need to maintain all rules project wise. We can add project wise rule changes if required any.
 
+**Note:** This configuration uses ESLint's new flat config format, compatible with ESLint 9.0+.
+
 ## How to Use ?
  ### Install
  `npm i eslint-config-vipul-base`
 
-Then in ESLint config object i.e `.eslintrc` ,  use `extends : "eslint-config-vipul-base"` as given below
+Then in your ESLint config file (e.g., `eslint.config.js`):
 
+```javascript
+import baseConfig from 'eslint-config-vipul-base';
+
+export default [
+  ...baseConfig,
+  {
+    // Your project-specific overrides
+    rules: {
+      // Override rules here
+    }
+  }
+];
 ```
-{
-  "root": true,
-  "extends": "eslint-config-vipul-base",
 
-  "rules": {
-    // Overrides
-  },
-
-  // Rules limited to specific locations
-  "overrides": []
-}
-```
+For legacy `.eslintrc` format (ESLint < 9.0), please use version 1.2.1 or earlier of this package.
 
 ## Authors
 * **Vipul Wairagade**

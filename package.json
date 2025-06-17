@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vipul-base",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "description": "Base ESLint config",
   "main": "index.js",
   "scripts": {
@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/vipulwairagade/eslint-config#readme",
   "devDependencies": {
-    "eslint": "^8.6.0",
-    "eslint-find-rules": "^4.1.0"
+    "eslint": "^9.29.0",
+    "eslint-find-rules": "^5.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8.6.0"
+    "eslint": "^9.29.0"
   }
 }
