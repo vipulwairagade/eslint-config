@@ -17,10 +17,10 @@ This is base eslint configuration which can be used across projects without need
 Then in your ESLint config file (e.g., `eslint.config.js`):
 
 ```javascript
-import vipulBase from 'eslint-config-vipul-base';
+import baseConfig from 'eslint-config-vipul-base';
 
 export default [
-  ...vipulBase,
+  ...baseConfig,
   {
     // Your project-specific overrides
     rules: {
