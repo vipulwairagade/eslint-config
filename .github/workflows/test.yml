@@ -17,7 +17,7 @@ jobs:
       - name: Create Node Environment
         uses: actions/setup-node@v1
         with:
-          node-version: 14.x
+          node-version: 18.x
       - name: Install Packages & Test Application
         run: |
           npm ci
