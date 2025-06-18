@@ -11,13 +11,17 @@ jobs:
   test:
     name: Test Package
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Create Node Environment
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
       - name: Install Packages & Test Application
         run: |
           npm ci
