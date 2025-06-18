@@ -4,7 +4,7 @@
   "description": "Base ESLint config",
   "main": "index.js",
   "scripts": {
-    "test": "eslint-find-rules --unused --deprecated"
+    "test": "node test-config.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,7 @@
   },
   "homepage": "https://github.com/vipulwairagade/eslint-config#readme",
   "devDependencies": {
-    "eslint": "^9.29.0",
-    "eslint-find-rules": "^5.0.0"
+    "eslint": "^9.29.0"
   },
   "peerDependencies": {
     "eslint": "^9.29.0"
